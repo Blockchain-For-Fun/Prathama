@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://test.gd" type="Script" id=2]
+[ext_resource path="res://world/materials/grass-rock2.material" type="Material" id=3]
+
+[sub_resource type="OpenSimplexNoise" id=3]
+
+[sub_resource type="VoxelGeneratorNoise" id=4]
+noise = SubResource( 3 )
+height_start = -50.0
+height_range = 100.0
+
+[sub_resource type="VoxelMesherTransvoxel" id=2]
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="VoxelLodTerrain" type="VoxelLodTerrain" parent="."]
+generator = SubResource( 4 )
+mesher = SubResource( 2 )
+material = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48529, 22.061, 7.70158 )
+
+[node name="VoxelViewer" type="VoxelViewer" parent="Player/Head/Camera" index="6"]
+
+[connection signal="shot_hit" from="Player/Head/Camera/Shoot" to="." method="_on_Shoot_shot_hit"]
+
+[editable path="Player"]
