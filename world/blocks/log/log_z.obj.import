@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/log_z.obj-3fa132012046b5dc99e2473885121a27.mesh"
+
+[deps]
+
+files=[ "res://.import/log_z.obj-3fa132012046b5dc99e2473885121a27.mesh" ]
+
+source_file="res://world/blocks/log/log_z.obj"
+dest_files=[ "res://.import/log_z.obj-3fa132012046b5dc99e2473885121a27.mesh", "res://.import/log_z.obj-3fa132012046b5dc99e2473885121a27.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

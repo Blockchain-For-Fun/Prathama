@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Crypto Craft"
-run/main_scene="res://test.tscn"
+config/name="Prathama"
+run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
 [physics]

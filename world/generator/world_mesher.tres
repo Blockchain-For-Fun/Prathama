@@ -1,0 +1,4 @@
+[gd_resource type="VoxelMesherTransvoxel" format=2]
+
+[resource]
+texturing_mode = 1
