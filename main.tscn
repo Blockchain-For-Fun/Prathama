@@ -1,25 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://test.gd" type="Script" id=2]
-[ext_resource path="res://world/materials/grass-rock2.material" type="Material" id=3]
-[ext_resource path="res://world/generator/world_generator.tres" type="VoxelGeneratorScript" id=4]
-[ext_resource path="res://world/generator/world_mesher.tres" type="VoxelMesherTransvoxel" id=5]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://world/world.tscn" type="PackedScene" id=2]
 
-[node name="Spatial" type="Spatial"]
-script = ExtResource( 2 )
-
-[node name="VoxelLodTerrain" type="VoxelLodTerrain" parent="."]
-generator = ExtResource( 4 )
-mesher = ExtResource( 5 )
-material = ExtResource( 3 )
-run_stream_in_editor = false
+[node name="main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48529, 22.061, 7.70158 )
+position = Vector2( 49, 452 )
 
-[node name="VoxelViewer" type="VoxelViewer" parent="Player/Head/Camera" index="6"]
-
-[connection signal="shot_hit" from="Player/Head/Camera/Shoot" to="." method="_on_Shoot_shot_hit"]
-
-[editable path="Player"]
+[node name="World" parent="." instance=ExtResource( 2 )]

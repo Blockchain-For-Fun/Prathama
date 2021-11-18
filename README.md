@@ -9,10 +9,6 @@ I have little game dev and blockchain development experience along with no artis
 I'm working on filling out the issue page with trackers and the discussion section is open to all. Any advice, ideas, or concerns are welcome.
 
 ## References
-First Person Controller (FPS) for Godot by Link-3D (Danyl Bekhoucha): https://github.com/Linko-3D/First-Person-Controller-FPS
+2D Platformer Youtube tutorial by Eli Cuaycong: https://www.youtube.com/watch?v=xFEKIWpd0sU
 
-Godot voxel plugin by Zylann (Marc Gilleron): https://github.com/Zylann/godot_voxel
-
-Tutorial to learn the Zylann's voxel plugin by Aknakos: https://www.youtube.com/watch?v=YDHkTJ6Na9U
-
-Some materials, textures, and code snippets were taken from Zylann's (Marc Gilleron's) godot_voxel example games: https://github.com/Zylann/godot_voxel
+Godot 2D procedural generation tutorial by PlugWorld: https://www.youtube.com/watch?v=FZJ02G69HkY
